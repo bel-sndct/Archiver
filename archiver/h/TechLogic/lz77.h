@@ -30,9 +30,6 @@ public:
     void compressor(QString, QString);
     void decompressor(QString, QString);
 
-    void def_compressor(QString, QString);
-    void def_decompressor(QString, QString);
-
 private:
     Code getPrefix(vector<unsigned char>&, int, int);
     pair<vector<Code>, int> getCodes(QString);
