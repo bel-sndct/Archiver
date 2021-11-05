@@ -21,9 +21,6 @@ public:
     void compressor(QString&, QString&);
     void decompressor(QString&, QString&);
 
-    void def_compressor(QString&, QString&, QString&);
-    void def_decompressor(QString&, QString&, QString&);
-
 private:
     void readDataFromFile(QString&, vector<char>&);
     void createTable(Node*);
