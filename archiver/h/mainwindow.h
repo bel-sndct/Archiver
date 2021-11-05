@@ -5,6 +5,7 @@
 #include <QMainWindow>
 #include <QListView>
 #include <QUrl>
+#include <QFile>
 #include "explorermodel.h"
 #include "archivewindow.h"
 #include "extractwindow.h"
@@ -31,9 +32,9 @@ private slots:
 
     void on_pushButton_undo_clicked();
 
-    void on_listView_clicked(const QModelIndex &index);
+    void on_listView_clicked(const QModelIndex&);
 
-    void on_listView_doubleClicked(const QModelIndex &index);
+    void on_listView_doubleClicked(const QModelIndex&);
 
 private:
     Ui::MainWindow *ui;
@@ -41,5 +42,6 @@ private:
     ExplorerModel* explorer_model;
     QDir current_folder;
     QString clicked_file;
+    HuffmanTree huffman_processor;
 };
 #endif // MAINWINDOW_H
